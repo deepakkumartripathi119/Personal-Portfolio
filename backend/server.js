@@ -50,7 +50,8 @@ app.post('/send-email', async (req, res) => {
     await transporter.sendMail(mailOptions);
     res.json({ success: true });
   } catch (error) {
-    res.status(500).json({ error: 'Failed to send email.' });
+    console.error('Email send error:', error);
+    res.status(500).json({ error: 'Failed to send email.', details: error.message });
   }
 });
 
