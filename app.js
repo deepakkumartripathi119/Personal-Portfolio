@@ -344,7 +344,6 @@ function initProjectsSection() {
         "TypeScript",
         "TailwindCSS",
         "Gemini AI",
-        "Vercel",
       ],
       liveDemo: "https://oopsiq.onrender.com/",
       github: "https://github.com/deepakkumartripathi119/OopsIQ",
@@ -787,7 +786,7 @@ function initResumeDownload() {
       // Create a mock resume download
       const link = document.createElement("a");
       link.href = "data:application/pdf;base64,"; // Mock PDF data
-      link.download = "Alex_Developer_Resume.pdf";
+  link.download = "Deepak_Resume.pdf";
 
       // Show download notification
       showNotification("Resume download started!", "success");
