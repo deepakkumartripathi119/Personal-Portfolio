@@ -9,9 +9,10 @@
   "author": "Deepak Kumar Tripathi",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
-    "nodemailer": "^6.9.4",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.1"
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.4",
+    "resend": "^6.1.0"
   }
 }
