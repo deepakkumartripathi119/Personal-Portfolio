@@ -717,17 +717,18 @@ function handleFormSubmission(form, data) {
         );
         form.reset();
       } else {
-        showNotification(
-          "Failed to send message. Please try again later.",
-          "error"
-        );
+        let errorMsg = "Failed to send message. Please try again later.";
+        if (result.details) {
+          errorMsg += `\nError: ${result.details}`;
+        }
+        showNotification(errorMsg, "error");
       }
       submitBtn.textContent = originalText;
       submitBtn.disabled = false;
     })
-    .catch(() => {
+    .catch((err) => {
       showNotification(
-        "Failed to send message. Please check your connection or try again later.",
+        `Failed to send message. Please check your connection or try again later.\nError: ${err?.message || err}`,
         "error"
       );
       submitBtn.textContent = originalText;
