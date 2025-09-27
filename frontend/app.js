@@ -701,7 +701,7 @@ function handleFormSubmission(form, data) {
   submitBtn.textContent = "Sending...";
   submitBtn.disabled = true;
 
-  fetch("http://localhost:5000/send-email", {
+  fetch("https://deepakportfolio-zeta.vercel.app/send-email", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
