@@ -562,8 +562,8 @@ function initContactForm() {
         return;
       }
 
-      // Simulate form submission
-      handleFormSubmission(this, data);
+  // Send request to backend
+  handleFormSubmission(this, data);
     });
 
     // Add real-time validation
@@ -701,21 +701,38 @@ function handleFormSubmission(form, data) {
   submitBtn.textContent = "Sending...";
   submitBtn.disabled = true;
 
-  // Simulate API call
-  setTimeout(() => {
-    // Show success message
-    showNotification(
-      "Message sent successfully! I'll get back to you soon.",
-      "success"
-    );
-
-    // Reset form
-    form.reset();
-
-    // Reset button
-    submitBtn.textContent = originalText;
-    submitBtn.disabled = false;
-  }, 1500);
+  fetch("http://localhost:5000/send-email", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      if (result.success) {
+        showNotification(
+          "Message sent successfully! I'll get back to you soon.",
+          "success"
+        );
+        form.reset();
+      } else {
+        showNotification(
+          "Failed to send message. Please try again later.",
+          "error"
+        );
+      }
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    })
+    .catch(() => {
+      showNotification(
+        "Failed to send message. Please check your connection or try again later.",
+        "error"
+      );
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    });
 }
 
 function showNotification(message, type = "info") {
