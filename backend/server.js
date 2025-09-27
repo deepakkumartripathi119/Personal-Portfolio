@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 // Allow only deployed frontend URL for CORS
 app.use(cors({
-  origin: 'https://deepakkumartripathi119.github.io/Personal-Portfolio',
+  origin: ['https://deepakkumartripathi119.github.io/Personal-Portfolio','https://personal-portfolio-tau-ten-39.vercel.app/'],
   methods: ['GET', 'POST'],
   credentials: false
 }));
