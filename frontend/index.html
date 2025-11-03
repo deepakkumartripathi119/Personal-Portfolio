@@ -167,98 +167,8 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <div class="section-header">
-          <h2>Skills & Technologies</h2>
-          <p>My technical expertise</p>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3><i class="fas fa-code"></i> Programming</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">C</span>
-              <span class="skill-tag">C++</span>
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Python</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">HTML</span>
-              <span class="skill-tag">CSS</span>
-              <span class="skill-tag">React.js</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Express.js</span>
-              <span class="skill-tag">MongoDB</span>
-              <span class="skill-tag">PassportJS</span>
-              <span class="skill-tag">Firebase Auth</span>
-              <span class="skill-tag">Azure</span>
-              <span class="skill-tag">Socket.IO</span>
-              <span class="skill-tag">WebRTC</span>
-              <span class="skill-tag">Google OAuth2</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-database"></i> Databases</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">MongoDB</span>
-              <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">SQL</span>
-              <span class="skill-tag">Oracle SQL</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-cogs"></i> Backend & Frameworks</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Express.js</span>
-              <span class="skill-tag">Spring Boot</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-tools"></i> Tools & Misc</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">GitHub</span>
-              <span class="skill-tag">Linux</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Numpy</span>
-              <span class="skill-tag">Pandas</span>
-              <span class="skill-tag">Matplotlib</span>
-              <span class="skill-tag">Seaborn</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-header">
-          <h2>Featured Projects</h2>
-          <p>Some of my recent work</p>
-        </div>
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="Web Application">
-            Web Apps
-          </button>
-          <button class="filter-btn" data-filter="Mobile App">Mobile</button>
-          <button class="filter-btn" data-filter="AI/ML">AI/ML</button>
-          <button class="filter-btn" data-filter="Analytics">Analytics</button>
-        </div>
-        <div class="projects-grid" id="projects-grid">
-          <!-- Projects will be populated by JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
+        <!-- Experience Section -->
     <section id="experience" class="experience">
       <div class="container">
         <div class="section-header">
@@ -266,6 +176,38 @@
           <p>Professional and academic journey</p>
         </div>
         <div class="timeline">
+           <div class="timeline-container">
+
+            <!-- 
+              New Item: Virtual Internship 
+              (Based on Option 6 from our chat) 
+            -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-period">Oct 2025 – Present</div>
+                    <h3>Software Development Intern</h3>
+                    <h4>Virtual Internships <br>London, United Kingdom (Remote)</h4>
+                    <p class="text-gray-700 mt-3">
+                       Optimizing and refactoring backend services for a high-availability EdTech platform. 
+                       Responsible for decreasing service latency, improving database performance, and 
+                       managing cloud-native deployments.
+                    </p>
+                    <ul class="achievements">
+                        <li>
+                            Optimize <b>backend</b> performance by refactoring <b>TypeScript</b>/<b>Express.js</b> 
+                            services with <b>TypeORM</b> to decrease latency, redesigning <b>MariaDB</b> 
+                            schemas, and tuning high-volume <b>SQL</b> queries to boost 
+                            throughput for <b>Kafka</b> data pipelines, managing all 
+                            containerized (<b>Docker</b>) deployments on <b>AWS</b>.
+                        </li>
+                    </ul>
+                    <div class="tech-stack">
+                        <b>Tech Stack:</b> TypeScript, Express.js, TypeORM, MariaDB, SQL, 
+                        Kafka, Docker, AWS
+                    </div>
+                </div>
+            </div>
           <div class="timeline-item">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
@@ -299,9 +241,106 @@
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2>Skills & Technologies</h2>
+          <p>My technical expertise</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Programming</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">PassportJS</span>
+              <span class="skill-tag">Firebase Auth</span>
+              <span class="skill-tag">Azure</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Socket.IO</span>
+              <span class="skill-tag">WebRTC</span>
+              <span class="skill-tag">Google OAuth2</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-database"></i> Databases</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Oracle SQL</span>
+              <span class="skill-tag">MariaDB</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-cogs"></i> Backend & Frameworks</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Spring Boot</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Tools & Misc</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Numpy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">Seaborn</span>
+              <span class="skill-tag">Kafka</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p>Some of my recent work</p>
+        </div>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Web Application">
+            Web Apps
+          </button>
+          <button class="filter-btn" data-filter="Mobile App">Mobile</button>
+          <button class="filter-btn" data-filter="AI/ML">AI/ML</button>
+          <button class="filter-btn" data-filter="Analytics">Analytics</button>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Projects will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
 
     <!-- Education Section -->
     <section id="education" class="education">
@@ -392,6 +431,15 @@
               >
             </div>
           </div>
+                    <div class="achievement-item">
+            <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+            <div class="achievement-content">
+              <h4>Codechef Starters : 209 & 210</h4>
+              <span
+                >Achieved Global Rank 510 & 229 among 25,000+ participants</span
+              >
+            </div>
+          </div>
           <div class="achievement-item">
             <div class="achievement-icon"><i class="fas fa-medal"></i></div>
             <div class="achievement-content">
@@ -401,6 +449,7 @@
               >
             </div>
           </div>
+
           <div class="achievement-item">
             <div class="achievement-icon"><i class="fas fa-award"></i></div>
             <div class="achievement-content">
