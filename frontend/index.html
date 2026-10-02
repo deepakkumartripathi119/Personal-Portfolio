@@ -1,607 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deepak Kumar Tripathi - Backend Engineer</title>
-    <meta
-      name="description"
-  content="Backend engineer at Deutsche Bank (IIT Guwahati '26) using Java, Spring Boot and Node.js/TypeScript. Shipped LLM-powered APIs to ~5,000 users in initial rollout and fixed 50+ production issues."
-    />
+  <meta name="description"
+    content="Graduate Analyst at Deutsche Bank (IIT Guwahati '26) using Java, Spring Boot and Node.js/TypeScript. Shipped LLM-powered APIs to ~5,000 users in initial rollout and fixed 50+ production issues." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Alex+Brush&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <a href="#home"> <-Deepak-></a>
-        </div>
-        <div class="nav-menu" id="nav-menu">
-          <a href="#home" class="nav-link active">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#experience" class="nav-link">Experience</a>
-          <a href="#education" class="nav-link">Education</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
-        <div class="nav-controls">
-          <button
-            class="theme-toggle"
-            id="theme-toggle"
-            aria-label="Toggle theme"
-          >
-            <i class="fas fa-moon"></i>
-          </button>
-          <button
-            class="mobile-menu-toggle"
-            id="mobile-menu-toggle"
-            aria-label="Toggle menu"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-    </nav>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Alex+Brush&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-background">
-        <div class="floating-particles"></div>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home"> <-Deepak-></a>
       </div>
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>Hi, I'm <span class="name-highlight">Deepak Kumar Tripathi</span></h1>
-          <h2 class="typing-text" id="typing-text">
-            Software Development Engineer
-          </h2>
-          <p class="hero-description">
-            Building scalable backend systems, distributed services, and low-latency applications
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="floating-particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="name-highlight">Deepak Kumar Tripathi</span></h1>
+        <h2 class="typing-text" id="typing-text">
+          Software Development Engineer
+        </h2>
+        <p class="hero-description">
+          Building scalable backend systems, distributed services, and low-latency applications
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn--primary">Contact Me</a>
+          <a class="btn btn--outline" id="download-resume"
+            href="https://drive.google.com/file/d/1t0QO_mbL6bA-AMrqcuw7oCUgCLVsfL8E/view?usp=sharing">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/deepakkumartripathi119" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/deepak-kumar-tripathi-598253256" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-container">
+          <img src="profileDeepak1.png" alt="Deepak Kumar Tripathi" />
+          <div class="image-decoration"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>Backend engineer at Deutsche Bank | IIT Guwahati '26</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Hi, I'm Deepak Kumar Tripathi</h3>
+          <p>
+            Graduate Analyst at Deutsche Bank (IIT Guwahati '26), building backend services with Java, Spring Boot and Kafka. Previously, as a Software Development Intern at Virtual Internships, delivered LLM-powered REST APIs for a production feature (~5,000 users in initial rollout) and resolved 50+ production issues. Codeforces Specialist; CodeChef Global Rank 176.
           </p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn--primary">Contact Me</a>
-            <a class="btn btn--outline" id="download-resume" href="https://drive.google.com/file/d/10d3bd5OFVyAqKNLJic2pPpbTyms8n8O0/view?usp=sharing">
-              <i class="fas fa-download"></i> Download Resume
-            </a>
-          </div>
-          <div class="hero-social">
-            <a
-              href="https://github.com/deepakkumartripathi119"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/deepak-kumar-tripathi-598253256"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number" data-target="4">0</div>
+              <div class="stat-label">Years at IITG</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="9">0</div>
+              <div class="stat-label">Major Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="14">0</div>
+              <div class="stat-label">Major Tech Stacks</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="7">0</div>
+              <div class="stat-label">Major Awards</div>
+            </div>
           </div>
         </div>
-        <div class="hero-image">
-          <div class="image-container">
-            <img
-              src="profileDeepak1.png"
-              alt="Deepak Kumar Tripathi"
-            />
-            <div class="image-decoration"></div>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-indicator">
-        <i class="fas fa-chevron-down"></i>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-header">
-          <h2>About Me</h2>
-          <p>Backend engineer at Deutsche Bank | IIT Guwahati '26</p>
-        </div>
-        <div class="about-content">
-          <div class="about-text">
-            <h3>Hi, I'm Deepak Kumar Tripathi</h3>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h4>Academic Foundation</h4>
             <p>
-              Backend engineer at Deutsche Bank (IIT Guwahati '26) using Java, Spring Boot and Node.js/TypeScript. Shipped LLM-powered APIs to ~5,000 users in initial rollout and fixed 50+ production issues. I build systems from scratch with emphasis on concurrency, low latency, and fault tolerance. My work includes a custom Redis server that handles 1000+ concurrent requests with replication and persistence, and production backend services built using Java (Spring Boot), Node.js, Kafka, and AWS.<br /><br />
-              I enjoy designing microservices and event-driven architectures, optimizing performance under load, and delivering reliable systems for real-world users.
+              Strong foundation in data structures, systems, networking, blockchain, control systems, and applied
+              mathematics through rigorous coursework at IIT Guwahati.
             </p>
-            <div class="stats-grid">
-              <div class="stat-item">
-                <div class="stat-number" data-target="4">0</div>
-                <div class="stat-label">Years at IITG</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number" data-target="9">0</div>
-                <div class="stat-label">Major Projects</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number" data-target="14">0</div>
-                <div class="stat-label">Major Tech Stacks</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number" data-target="7">0</div>
-                <div class="stat-label">Major Awards</div>
-              </div>
-            </div>
           </div>
-          <div class="about-highlights">
-            <div class="highlight-card">
-              <i class="fas fa-graduation-cap"></i>
-              <h4>Academic Foundation</h4>
-              <p>
-                Strong foundation in data structures, systems, networking, blockchain, control systems, and applied mathematics through rigorous coursework at IIT Guwahati.
-              </p>
-            </div>
-            <div class="highlight-card">
-              <i class="fas fa-network-wired"></i>
-              <h4>Full Stack Development</h4>
-              <p>
-                Experience building microservices and event-driven systems with Spring Boot, Node.js, Kafka, and SQL/NoSQL databases, with focus on scalability and reliability.
-              </p>
-            </div>
-            <div class="highlight-card">
-              <i class="fas fa-user-check"></i>
-              <h4>Engineering Practices</h4>
-              <p>
-                Performance optimization, debugging, code reviews, and production-focused delivery with clear documentation and collaborative development practices.
-              </p>
-            </div>
+          <div class="highlight-card">
+            <i class="fas fa-network-wired"></i>
+            <h4>Full Stack Development</h4>
+            <p>
+              Experience building microservices and event-driven systems with Spring Boot, Node.js, Kafka, and SQL/NoSQL
+              databases, with focus on scalability and reliability.
+            </p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-user-check"></i>
+            <h4>Engineering Practices</h4>
+            <p>
+              Performance optimization, debugging, code reviews, and production-focused delivery with clear
+              documentation and collaborative development practices.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-        <!-- Experience Section -->
-    <section id="experience" class="experience">
-      <div class="container">
-        <div class="section-header">
-          <h2>Experience & Internships</h2>
-          <p>Professional and academic journey</p>
-        </div>
-        <div class="timeline">
-           <div class="timeline-container">
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2>Experience & Internships</h2>
+        <p>Professional and academic journey</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-container">
 
-            <!-- Graduate Analyst Role -->
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Jul 2026 – Present</div>
-                    <h3>Graduate Analyst</h3>
-                  <h4>Deutsche Bank Group <br>Bengaluru, India (On Site)</h4>
-                    <ul class="achievements">
-                        <li>Developed ReconX, a trade-reconciliation service in Java, Spring Boot, PostgreSQL and Kafka, with JWT-based RBAC and Prometheus monitoring. Scored 700/700 in the graduate engineering assessment.</li>
-                        <li>Designed and coded an Agentic AI Auditor for compliance-audit workflows in a 24-hour internal hackathon with a six-member team, using React, Node.js, Gemini API and GCP.</li>
-                        <li>Built a FastAPI/Next.js compliance dashboard and integrated it with the existing cron-based Java patching automation using Python and Ansible, including refactoring and server deployment.</li>
-                    </ul>
-                    <div class="tech-stack">
-                      <b>Tech Stack:</b> Java, Spring Boot, Kafka, GCP, Python, FastAPI
-                    </div>
-                </div>
-            </div>
-
-            <!-- Virtual Internship -->
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-period">Oct 2025 – Jan 2026</div>
-                    <h3>Software Engineering Intern</h3>
-                  <h4>Virtual Internships <br>London, UK (Remote)</h4>
-                    <ul class="achievements">
-                        <li>Delivered LLM-powered REST APIs in TypeScript/Express for a production profile feature used by ~5,000 users during initial rollout, handling design, unit and integration tests, and release. Integrated structured profile data with the OpenAI API.</li>
-                        <li>Implemented database-backed per-user daily rate limiting and API usage tracking, plus input filtering that rejects low-quality requests before model calls to cut token usage.</li>
-                        <li>Created Metabase analytics from database queries to track feature adoption.</li>
-                        <li>Resolved 50+ production issues across web platforms using code analysis and Datadog logs.</li>
-                        <li>Tuned MariaDB queries and schemas to address latency bottlenecks.</li>
-                        <li>Added human-readable public URL slugs and sitemap generation for company pages to support search discoverability.</li>
-                        <li>Reviewed many minor pull requests ahead of production approval.</li>
-                    </ul>
-                    <div class="tech-stack">
-                      <b>Tech Stack:</b> Node.js, TypeScript, Express.js, MariaDB, OpenAI API, Datadog, Docker
-                    </div>
-                </div>
-            </div>
-
-            <!-- DB Intern -->
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <div class="timeline-period">May 2025 – Jun 2025</div>
-                <h3>Technology Development Intern</h3>
-                <h4>Deutsche Bank Group <br>Pune, India (On-site)</h4>
-                <ul class="achievements">
-                  <li>Analyzed 15K+ lines of legacy Java in a securities-lending trade-matching system, identified a many-to-one matching gap, and proposed a dynamic-programming solution that was approved.</li>
-                  <li>Reduced trade-processing latency by ~10% through profiling and Java Stream optimization.</li>
-                  <li>Optimized Oracle SQL bottlenecks through indexing and query rewrites.</li>
-                </ul>
-                <div class="tech-stack">
-                  <b>Tech Stack:</b> Java, Spring Boot, Oracle SQL, Multithreading
-                </div>
+          <!-- Graduate Analyst Role -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">Jul 2026 – Present</div>
+              <h3>Graduate Analyst</h3>
+              <h4>Deutsche Bank Group <br>Bengaluru, India (On Site)</h4>
+              <ul class="achievements">
+                <li>Developed ReconX, a trade-reconciliation service in Java, Spring Boot, PostgreSQL and Kafka, with
+                  JWT-based RBAC and Prometheus monitoring.</li>
+                <li>Designed and coded an Agentic AI Auditor for compliance-audit workflows in a 24-hour internal
+                  hackathon with a six-member team, using React, Node.js, Gemini API and GCP.</li>
+                <li>Built a FastAPI/Next.js compliance dashboard and integrated it with the existing cron-based Java
+                  patching automation using Python and Ansible, including refactoring and server deployment.</li>
+              </ul>
+              <div class="tech-stack">
+                <b>Tech Stack:</b> Java, Spring Boot, Kafka, GCP, Python, FastAPI
               </div>
             </div>
-          
-        </div>
-      </div>
-    </section>
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <div class="section-header">
-          <h2>Skills & Technologies</h2>
-          <p>My technical expertise</p>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3><i class="fas fa-code"></i> Languages</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">C++</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">SQL</span>
-            </div>
           </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-laptop-code"></i> Backend & Distributed Systems</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Spring Boot</span>
-              <span class="skill-tag">FastAPI</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Express.js</span>
-              <span class="skill-tag">REST APIs</span>
-              <span class="skill-tag">Microservices</span>
-              <span class="skill-tag">Multithreading</span>
-              <span class="skill-tag">Concurrency</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-database"></i> Databases & Messaging</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">Oracle SQL</span>
-              <span class="skill-tag">MariaDB</span>
-              <span class="skill-tag">MongoDB</span>
-              <span class="skill-tag">Redis</span>
-              <span class="skill-tag">Kafka</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-cogs"></i> CS Fundamentals</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Data Structures & Algorithms</span>
-              <span class="skill-tag">OOP</span>
-              <span class="skill-tag">System Design</span>
-              <span class="skill-tag">Operating Systems</span>
-              <span class="skill-tag">Computer Networks</span>
-              <span class="skill-tag">DBMS</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-tools"></i> Cloud & Tooling</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">AWS</span>
-              <span class="skill-tag">GCP</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Linux/Unix</span>
-              <span class="skill-tag">CI/CD</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">JUnit</span>
-              <span class="skill-tag">Prometheus</span>
-              <span class="skill-tag">Datadog</span>
-              <span class="skill-tag">Observability</span>
-              <span class="skill-tag">Ansible</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-brain"></i> AI/ML</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">OpenAI API</span>
-              <span class="skill-tag">Gemini API</span>
-              <span class="skill-tag">RAG</span>
-              <span class="skill-tag">Embeddings</span>
-              <span class="skill-tag">FAISS</span>
-              <span class="skill-tag">LangChain</span>
-              <span class="skill-tag">LangGraph</span>
-              <span class="skill-tag">LangSmith</span>
-              <span class="skill-tag">Agentic AI</span>
-              <span class="skill-tag">MCP</span>
-              <span class="skill-tag">Tool Calling</span>
-              <span class="skill-tag">Prompt Engineering</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-header">
-          <h2>Featured Projects</h2>
-          <p>Some of my recent work</p>
-        </div>
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="Web Application">
-            Web Apps
-          </button>
-          <button class="filter-btn" data-filter="Mobile App">Mobile</button>
-          <button class="filter-btn" data-filter="AI/ML">AI/ML</button>
-          <button class="filter-btn" data-filter="Analytics">Analytics</button>
-        </div>
-        <div class="projects-grid" id="projects-grid">
-          <!-- Projects will be populated by JavaScript -->
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-      <div class="container">
-        <div class="section-header">
-          <h2>Education & Achievements</h2>
-          <p>Academic background and honors</p>
-        </div>
-        <div class="education-grid">
-          <div class="education-item">
-            <div class="education-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="education-content">
-              <h3>Indian Institute of Technology Guwahati</h3>
-              <h4>B.Tech, Electronics & Communication Engineering (Major)</h4>
-              <div class="education-meta">
-                <span class="year">2022 – 2026</span>
+          <!-- Virtual Internship -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">Oct 2025 – Jan 2026</div>
+              <h3>Software Development Intern</h3>
+              <h4>Virtual Internships <br>London, UK (Remote)</h4>
+              <ul class="achievements">
+                <li>Delivered LLM-powered REST APIs in TypeScript/Express for a production profile feature used by ~5,000 users during initial rollout, handling design, unit and integration tests, and release. Integrated structured profile data with the OpenAI API.</li>
+                <li>Implemented database-backed per-user daily rate limiting and API usage tracking, plus input filtering that rejects low-quality requests before model calls to reduce token usage.</li>
+                <li>Resolved 50+ production issues across web platforms using code analysis and Datadog logs.</li>
+                <li>Tuned MariaDB queries and schemas to address latency bottlenecks.</li>
+                <li>Built Metabase analytics on database queries to track feature adoption; added human-readable public URL slugs and sitemap generation for company pages.</li>
+              </ul>
+              <div class="tech-stack">
+                <b>Tech Stack:</b> Node.js, TypeScript, Express.js, MariaDB, OpenAI API, Datadog, Docker
               </div>
-              <div class="coursework">
-                <div
-                  style="
+            </div>
+          </div>
+
+          <!-- DB Intern -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">May 2025 – Jun 2025</div>
+              <h3>Technology Development Intern</h3>
+              <h4>Deutsche Bank Group <br>Pune, India (On-site)</h4>
+              <ul class="achievements">
+                <li>Analyzed 15K+ lines of legacy Java in a securities-lending trade-matching system, identified a
+                  many-to-one matching gap, and proposed a dynamic-programming solution that was approved.</li>
+                <li>Reduced trade-processing latency by ~10% through profiling and Java Stream optimization.</li>
+                <li>Optimized Oracle SQL bottlenecks through indexing and query rewrites.</li>
+              </ul>
+              <div class="tech-stack">
+                <b>Tech Stack:</b> Java, Spring Boot, Oracle SQL, Multithreading
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2>Skills & Technologies</h2>
+        <p>My technical expertise</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-laptop-code"></i> Frameworks & Runtimes</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">Streamlit</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Databases & Messaging</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Oracle SQL</span>
+            <span class="skill-tag">MariaDB</span>
+            <span class="skill-tag">Kafka</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Ansible</span>
+            <span class="skill-tag">Prometheus</span>
+            <span class="skill-tag">Datadog</span>
+            <span class="skill-tag">Metabase</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-cogs"></i> Concepts</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Structures & Algorithms</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Multithreading</span>
+            <span class="skill-tag">Operating Systems</span>
+            <span class="skill-tag">Computer Networks</span>
+            <span class="skill-tag">DBMS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-brain"></i> AI / LLM</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">OpenAI API</span>
+            <span class="skill-tag">Gemini API</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Embeddings</span>
+            <span class="skill-tag">FAISS</span>
+            <span class="skill-tag">BM25</span>
+            <span class="skill-tag">Agentic AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p>Some of my recent work</p>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Web Application">
+          Web Apps
+        </button>
+        <button class="filter-btn" data-filter="Mobile App">Mobile</button>
+        <button class="filter-btn" data-filter="AI/ML">AI/ML</button>
+        <button class="filter-btn" data-filter="Analytics">Analytics</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Projects will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <div class="section-header">
+        <h2>Education & Achievements</h2>
+        <p>Academic background and honors</p>
+      </div>
+      <div class="education-grid">
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education-content">
+            <h3>Indian Institute of Technology Guwahati</h3>
+            <h4>B.Tech, Electronics & Communication Engineering (Major)</h4>
+            <div class="education-meta">
+              <span class="year">2022 – 2026</span>
+            </div>
+            <div class="coursework">
+              <div style="
                     margin-top: 0.5em;
                     display: flex;
                     align-items: center;
                     flex-wrap: wrap;
-                  "
-                >
-                  <b style="margin-right: 0.5em">Coursework:</b>
-                  <span class="course-tag">Data Structures & Algorithms</span>
-                  <span class="course-tag">Computer Systems & Networks</span>
-                  <span class="course-tag">Blockchain Science & Technology</span>
-                  <span class="course-tag">Probability</span>
-                  <span class="course-tag">Linear Algebra</span>
-                  <span class="course-tag">Real Analysis</span>
-                  <span class="course-tag">Computer Vision</span>
-                  <span class="course-tag">Advanced Computer Architecture</span>
-                  <span class="course-tag">Digital & Analog Circuits</span>
-                </div>
+                  ">
+                <b style="margin-right: 0.5em">Coursework:</b>
+                <span class="course-tag">Data Structures & Algorithms</span>
+                <span class="course-tag">Computer Systems & Networks</span>
+                <span class="course-tag">Advanced Computer Architecture</span>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="achievements-grid">
-          <div class="achievement-item">
-            <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
-            <div class="achievement-content">
-              <h4>JEE Advanced 2022</h4>
-              <span>Secured All India Rank 1702 among 1.5 lakh students.</span>
-            </div>
-          </div>
-          <div class="achievement-item">
-            <div class="achievement-icon"><i class="fas fa-medal"></i></div>
-            <div class="achievement-content">
-              <h4>CodeChef Starters</h4>
-              <span
-                >Achieved Global Rank 176, 427, and 484 among 60,000+ participants (Rated 1700+).</span
-              >
-            </div>
-          </div>
-          <div class="achievement-item">
-            <div class="achievement-icon"><i class="fas fa-code"></i></div>
-            <div class="achievement-content">
-              <h4>Codeforces</h4>
-              <span>Achieved Specialist (1400+ rating) and solved 1000+ competitive programming questions across platforms.</span>
-            </div>
-          </div>
-          <div class="achievement-item">
-            <div class="achievement-icon"><i class="fas fa-medal"></i></div>
-            <div class="achievement-content">
-              <h4>Kriti Inter Hostel Tech Competition 2025</h4>
-              <span
-                >Awarded Bronze Medal for EnergyChain challenge project.</span
-              >
-            </div>
-          </div>
-
-          <div class="achievement-item">
-            <div class="achievement-icon"><i class="fas fa-award"></i></div>
-            <div class="achievement-content">
-              <h4>Vidyarthi Vigyan Manthan (VVM)</h4>
-              <span
-                >Secured State Rank 1 (2017) and Zonal Rank 2 (2018).</span
-              >
-            </div>
-          </div>
-          <div class="achievement-item">
-            <div class="achievement-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <div class="achievement-content">
-              <h4>Mathematics Olympiad</h4>
-              <span>Qualified Pre-Regional Mathematical Olympiad (Pre-RMO).</span>
-            </div>
-          </div>
-          <div class="achievement-item">
-            <div class="achievement-icon"><i class="fas fa-child"></i></div>
-            <div class="achievement-content">
-              <h4>National Level Yoga Competition</h4>
-              <span
-                >Represented at the KVS Nationals in the U-19 YOGA Competition
-                (2020).</span
-              >
-            </div>
-          </div>
-          <div class="achievement-item">
-            <div class="achievement-icon">
-              <i class="fas fa-basketball-ball"></i>
-            </div>
-            <div class="achievement-content">
-              <h4>Inter-Hostel Sports</h4>
-              <span
-                >Won a Silver Medal in Basketball as a key team player
-                (2025).</span
-              >
-            </div>
-          </div>
-          <div class="achievement-item">
-            <div class="achievement-icon"><i class="fas fa-music"></i></div>
-            <div class="achievement-content">
-              <h4>Inter-Hostel Cultural Events</h4>
-              <span
-                >Earned a Silver Medal for the Dance Module performance
-                (2024).</span
-              >
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-header">
-          <h2>Get In Touch</h2>
-          <p>Let's discuss your next project</p>
-        </div>
-        <div class="contact-content">
-          <div class="contact-info">
-            <!-- Only Deepak's email card remains -->
-            <div class="contact-card">
-              <i class="fas fa-envelope"></i>
-              <h4>Email</h4>
-              <p><a href="mailto:tripathideepak1702@gmail.com">tripathideepak1702@gmail.com</a></p>
-            </div>
-            <div class="contact-card">
-              <i class="fas fa-phone"></i>
-              <h4>Phone</h4>
-              <p><a href="tel:+916260563186">+91-6260563186</a></p>
-            </div>
-            <div class="contact-card">
-              <i class="fas fa-globe"></i>
-              <h4>Portfolio</h4>
-              <p><a href="https://deepakportfolio-zeta.vercel.app" target="_blank">deepakportfolio-zeta.vercel.app</a></p>
-            </div>
-            <div class="social-links">
-              <a href="https://github.com/deepakkumartripathi119" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/deepak-kumar-tripathi-598253256" target="_blank">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
-          </div>
-          <div class="contact-form">
-            <form id="contact-form">
-              <div class="form-group">
-                <label for="name" class="form-label">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="subject" class="form-label">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="message" class="form-label">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="form-control"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn--primary btn--full-width">
-                Send Message
-              </button>
-            </form>
+      <div class="achievements-grid">
+        <div class="achievement-item">
+          <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+          <div class="achievement-content">
+            <h4>Deutsche Bank Engineering Assessment</h4>
+            <span>Scored 700/700 in the graduate engineering assessment.</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-text">
-            <p>&copy; 2026 Deepak Kumar Tripathi. All rights reserved.</p>
-          </div>
-          <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+        <div class="achievement-item">
+          <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+          <div class="achievement-content">
+            <h4>JEE Advanced 2022</h4>
+            <span>Secured All India Rank 1702 of ~155,000 (top ~1.1%).</span>
           </div>
         </div>
-        <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-          <i class="fas fa-chevron-up"></i>
-        </button>
-      </div>
-    </footer>
+        <div class="achievement-item">
+          <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+          <div class="achievement-content">
+            <h4>CodeChef Starters</h4>
+            <span>Achieved Global Rank 176, 427, and 484 among 60,000+ participants (Rated 1700+).</span>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon"><i class="fas fa-code"></i></div>
+          <div class="achievement-content">
+            <h4>Codeforces</h4>
+            <span>Achieved Specialist (1400+ rating) and solved 1000+ competitive programming questions across
+              platforms.</span>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+          <div class="achievement-content">
+            <h4>Kriti Inter Hostel Tech Competition 2025</h4>
+            <span>Awarded Bronze Medal for EnergyChain challenge project.</span>
+          </div>
+        </div>
 
-    <!-- Project Modal -->
-    <div id="project-modal" class="modal hidden">
-      <div class="modal-overlay" id="modal-overlay"></div>
-      <div class="modal-content">
-        <button class="modal-close" id="modal-close">
-          <i class="fas fa-times"></i>
-        </button>
-        <div class="modal-body" id="modal-body">
-          <!-- Project details will be populated by JavaScript -->
+        <div class="achievement-item">
+          <div class="achievement-icon"><i class="fas fa-award"></i></div>
+          <div class="achievement-content">
+            <h4>Vidyarthi Vigyan Manthan (VVM)</h4>
+            <span>Secured State Rank 1 (2017) and Zonal Rank 2 (2018).</span>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="achievement-content">
+            <h4>Mathematics Olympiad</h4>
+            <span>Qualified Pre-Regional Mathematical Olympiad (Pre-RMO).</span>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon"><i class="fas fa-child"></i></div>
+          <div class="achievement-content">
+            <h4>National Level Yoga Competition</h4>
+            <span>Represented at the KVS Nationals in the U-19 YOGA Competition
+              (2020).</span>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon">
+            <i class="fas fa-basketball-ball"></i>
+          </div>
+          <div class="achievement-content">
+            <h4>Inter-Hostel Sports</h4>
+            <span>Won a Silver Medal in Basketball as a key team player
+              (2025).</span>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon"><i class="fas fa-music"></i></div>
+          <div class="achievement-content">
+            <h4>Inter-Hostel Cultural Events</h4>
+            <span>Earned a Silver Medal for the Dance Module performance
+              (2024).</span>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <script src="app.js"></script>
-  </body>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Let's discuss your next project</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <!-- Only Deepak's email card remains -->
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <p><a href="mailto:tripathideepak1702@gmail.com">tripathideepak1702@gmail.com</a></p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <h4>Phone</h4>
+            <p><a href="tel:+916260563186">+91-6260563186</a></p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-globe"></i>
+            <h4>Portfolio</h4>
+            <p><a href="https://deepakportfolio-zeta.vercel.app" target="_blank">deepakportfolio-zeta.vercel.app</a></p>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/deepakkumartripathi119" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/deepak-kumar-tripathi-598253256" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full-width">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2026 Deepak Kumar Tripathi. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal hidden">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-body" id="modal-body">
+        <!-- Project details will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
 </html>

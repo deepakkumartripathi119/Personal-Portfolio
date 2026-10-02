@@ -259,7 +259,7 @@ function initProjectsSection() {
       title: "AI-Powered Contract Review Assistant",
       subheading: "Kalmi Technology AI Hackathon (Jan 2025 - Feb 2025)",
       description:
-        "Designed a RAG pipeline using LangChain for orchestration and Cohere/FAISS for vectorization, processing 100+ legal documents to automate contract analysis. Developed a hybrid search ensembling BM25 with FAISS and Cohere Reranker.",
+        "Designed a RAG pipeline using LangChain, embeddings and FAISS to process 100+ legal documents. Built hybrid retrieval combining BM25, FAISS and a Cohere Reranker, improving recall by 35%. Integrated Gemini for compliance suggestions via Streamlit.",
       image:
         "https://opengraph.githubassets.com/1/deepakkumartripathi119/Contract_Checker-main",
       technologies: [
@@ -267,10 +267,10 @@ function initProjectsSection() {
         "RAG",
         "LangChain",
         "FAISS",
-        "Cohere",
+        "BM25",
+        "Cohere Reranker",
         "Gemini API",
-        "Streamlit",
-        "Python"
+        "Streamlit"
       ],
       liveDemo: "https://github.com/deepakkumartripathi119/Contract_Checker-main",
       github: "https://github.com/deepakkumartripathi119/Contract_Checker-main",
@@ -422,22 +422,18 @@ function renderProjects(projects) {
   projectsGrid.innerHTML = projects
     .map(
       (project) => `
-        <div class="project-card" data-category="${
-          project.category
+        <div class="project-card" data-category="${project.category
         }" data-project-id="${project.id}">
             <div class="project-image">
-                <img src="${project.image}" alt="${
-        project.title
-      }" loading="lazy">
+                <img src="${project.image}" alt="${project.title
+        }" loading="lazy">
                 <div class="project-overlay">
-                    <a href="${
-                      project.liveDemo
-                    }" target="_blank" title="View Live Demo">
+                    <a href="${project.liveDemo
+        }" target="_blank" title="View Live Demo">
                         <i class="fas fa-external-link-alt"></i>
                     </a>
-                    <a href="${
-                      project.github
-                    }" target="_blank" title="View Source Code">
+                    <a href="${project.github
+        }" target="_blank" title="View Source Code">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
@@ -448,8 +444,8 @@ function renderProjects(projects) {
                 <p>${project.description}</p>
                 <div class="project-tech">
                     ${project.technologies
-                      .map((tech) => `<span class="tech-tag">${tech}</span>`)
-                      .join("")}
+          .map((tech) => `<span class="tech-tag">${tech}</span>`)
+          .join("")}
                 </div>
             </div>
         </div>
@@ -519,25 +515,22 @@ function showProjectModal(project) {
   const modalBody = document.getElementById("modal-body");
 
   modalBody.innerHTML = `
-        <img src="${project.image}" alt="${
-    project.title
-  }" class="modal-project-image">
+        <img src="${project.image}" alt="${project.title
+    }" class="modal-project-image">
         <h2 class="modal-project-title">${project.title}</h2>
         <p class="modal-project-description">${project.description}</p>
         <div class="modal-project-tech">
             ${project.technologies
-              .map((tech) => `<span class="tech-tag">${tech}</span>`)
-              .join("")}
+      .map((tech) => `<span class="tech-tag">${tech}</span>`)
+      .join("")}
         </div>
         <div class="modal-project-links">
-            <a href="${
-              project.liveDemo
-            }" target="_blank" class="btn btn--primary">
+            <a href="${project.liveDemo
+    }" target="_blank" class="btn btn--primary">
                 <i class="fas fa-external-link-alt"></i> Live Demo
             </a>
-            <a href="${
-              project.github
-            }" target="_blank" class="btn btn--outline">
+            <a href="${project.github
+    }" target="_blank" class="btn btn--outline">
                 <i class="fab fa-github"></i> Source Code
             </a>
         </div>
@@ -581,8 +574,8 @@ function initContactForm() {
         return;
       }
 
-  // Send request to backend
-  handleFormSubmission(this, data);
+      // Send request to backend
+      handleFormSubmission(this, data);
     });
 
     // Add real-time validation
@@ -823,7 +816,7 @@ function initResumeDownload() {
       // Create a mock resume download
       const link = document.createElement("a");
       link.href = "data:application/pdf;base64,"; // Mock PDF data
-  link.download = "Deepak_Resume.pdf";
+      link.download = "Deepak_Resume.pdf";
 
       // Show download notification
       showNotification("Resume download started!", "success");
