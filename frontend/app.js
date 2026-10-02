@@ -256,26 +256,25 @@ function initProjectsSection() {
   const projectsData = [
     {
       id: 1,
-      title: "Amply",
-      subheading: "Decentralized Carbon Credit Marketplace (Jan 2025 - Feb 2025)",
+      title: "AI-Powered Contract Review Assistant",
+      subheading: "Kalmi Technology AI Hackathon (Jan 2025 - Feb 2025)",
       description:
-        "Designed a decentralized carbon credit marketplace with smart-contract powered transaction flow, handling 1500+ secure transactions with optimized settlement and strong user-level security.",
+        "Designed a RAG pipeline using LangChain for orchestration and Cohere/FAISS for vectorization, processing 100+ legal documents to automate contract analysis. Developed a hybrid search ensembling BM25 with FAISS and Cohere Reranker.",
       image:
-        "https://github.com/deepakkumartripathi119/Amply/blob/main/images/dashboard.png?raw=true",
+        "https://opengraph.githubassets.com/1/deepakkumartripathi119/Contract_Checker-main",
       technologies: [
-        "Smart Contracts",
-        "Distributed Transactions",
-        "Blockchain",
-        "Latency Optimization",
-        "2FA",
-        "Security Engineering",
-        "Solidity",
-        "Ethereum",
-        "Web3",
+        "GenAI",
+        "RAG",
+        "LangChain",
+        "FAISS",
+        "Cohere",
+        "Gemini API",
+        "Streamlit",
+        "Python"
       ],
-      liveDemo: "https://amply-1.onrender.com/",
-      github: "https://github.com/deepakkumartripathi119/Amply",
-      category: "Blockchain/Web",
+      liveDemo: "https://github.com/deepakkumartripathi119/Contract_Checker-main",
+      github: "https://github.com/deepakkumartripathi119/Contract_Checker-main",
+      category: "AI/ML",
     },
     {
       id: 2,
